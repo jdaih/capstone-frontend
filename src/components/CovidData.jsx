@@ -7,8 +7,6 @@ const [cases, setCases] = useState("");
 const [recovered, setRecovered] = useState("");
 const [deaths, setDeaths] = useState("");
 const [todayCases, setTodayCases] = useState("");
-const [deathCases, setDeathCases] = useState("");
-const [recoveredCases, setRecoveredCases] = useState("");
 const [userInput, setUserInput] = useState("");
 
 useEffect(() => {
@@ -24,17 +22,12 @@ const setData = ({
 	cases,
 	deaths,
 	recovered,
-	todayCases,
-	todayDeaths,
-	todayRecovered,
 }) => {
 	setCountry(country);
 	setCases(cases);
 	setRecovered(recovered);
 	setDeaths(deaths);
 	setTodayCases(todayCases);
-	setDeathCases(todayDeaths);
-	setRecoveredCases(todayRecovered);
 };
 
 const handleSearch = (e) => {
@@ -51,31 +44,20 @@ const handleSubmit = (props) => {
 
 return (
 	<div className="covidData">
-	<div className="covidData__input">
-		<form onSubmit={handleSubmit}>
-		{/* input county name */}
-		<input onChange={handleSearch} placeholder="Enter Country Name" />
-		<br />
-		<button type="submit">Search</button>
-		</form>
-	</div>
+        <div className="covidData__input">
+            <form onSubmit={handleSubmit}>
+            <input onChange={handleSearch} placeholder="Enter Country Here" />
+            <br />
+            <button type="submit">Search</button>
+            </form>
+        </div>
 
-	{/* Showing the details of the country */}
-	<div className="covidData__country__info">
-		<p>Country Name : {country} </p>
-
-		<p>Cases : {cases}</p>
-
-		<p>Deaths : {deaths}</p>
-
-		<p>Recovered : {recovered}</p>
-
-		<p>Cases Today : {todayCases}</p>
-
-		<p>Deaths Today : {deathCases}</p>
-
-		<p>Recovered Today : {recoveredCases}</p>
-	</div>
+        <div className="covidData_info">
+            <p>Name: {country} </p>
+            <p>Cases: {cases}</p>
+            <p>Deaths: {deaths}</p>
+            <p>Recovered: {recovered}</p>
+        </div>
 	</div>
 );
 }

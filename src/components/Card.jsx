@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 
 export default function InfoCard() {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 200 }}>
      <CardMedia
         component="img"
         height="300"
@@ -16,18 +16,12 @@ export default function InfoCard() {
       />
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
         </Typography>
         <Typography variant="h3" component="div">
-          Covid-19
+          COVID-19 Tracker
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+        ~ Remember to stay vaccinated ~
         </Typography>
       </CardContent>
     </Card>
