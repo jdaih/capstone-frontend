@@ -1,6 +1,9 @@
 ## Project Description 
 With COVID-19 becoming an ever-present threat in today's society, this app was designed to look-up the COVID-19 data of countries. It uses an open-source api (https://github.com/disease-sh/API) that provides detailed information on the virus and is constantly updated.
 
+## Heroku Deployment
+https://covid-track3r.herokuapp.com/
+
 ## User Stories
 As a user, I can…
 - Look-up the COVID-19 data of any country
