@@ -23,3 +23,4 @@ MERN Stack
 - Header is glued to the card
 - Image cannot be made smaller
 - Never linked the front- to backend
+- Buttons don't link to anywhere
