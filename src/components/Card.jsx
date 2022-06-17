@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import CardMedia from '@mui/material/CardMedia';
 
 const bull = (
   <Box
@@ -18,6 +17,12 @@ const bull = (
 export default function BasicCard() {
   return (
     <Card sx={{ minWidth: 275 }}>
+     <CardMedia
+        component="img"
+        height="300"
+        image="https://www.jimned.esc14.net/upload/page/0122/widgets/image/001911/covid19pic.png"
+        alt="covid-19"
+      />
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
@@ -34,9 +39,6 @@ export default function BasicCard() {
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

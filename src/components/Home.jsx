@@ -3,6 +3,7 @@ import React from "react"
 import MenuAppBar from './AppBar'
 import Card from './Card'
 
+
 const Home = () => {
     return(
         <div className='Home'>
